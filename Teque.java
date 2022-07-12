@@ -6,12 +6,12 @@ import java.io.*;
 
 public class Teque {
     // initialise two halves - first and second, respectively
-    private static int firstHead = 0;
-    private static int firstTail = 0;
-    private static int secondHead = 0;
-    private static int secondTail = 0;
-    private static HashMap<Integer, Integer> first = new HashMap<>();
-    private static HashMap<Integer, Integer> second = new HashMap<>();
+    public static int firstHead = 0;
+    public static int firstTail = 0;
+    public static int secondHead = 0;
+    public static int secondTail = 0;
+    public static HashMap<Integer, Integer> first = new HashMap<>();
+    public static HashMap<Integer, Integer> second = new HashMap<>();
 
     public static void main(String[] args) {
 
@@ -24,7 +24,7 @@ public class Teque {
 
             // find conrresponding commands
             if (command.charAt(0) == 'g') {
-                fio.println(get(num));
+                fio.println();(get(num));
             } else if (command.charAt(5) == 'b') {
                 pushBack(num);
             } else if (command.charAt(5) == 'f') {
