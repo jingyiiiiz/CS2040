@@ -10,26 +10,30 @@ public class WeakVertices {
         int n = io.getInt();
         while (n != -1) {
             // set up graph
-            int [][] graph = new int [n][n];
+            ArrayList<ArrayList<Integer>> adjList = new ArrayList<ArrayList<Integer>>();
             // set up a reference
             int [] reference = new int[n];
             for (int i = 0; i < n; i++) {
+                adjList.add(new ArrayList<>());
                 // zeros in reference indicating that the vertex is weak
                 reference[i] = 0;
                 for (int j = 0; j < n; j++) {
-                    graph[i][j] = io.getInt();
+                    int num = io.getInt();
+                    if (num == 1) {
+                        adjList.get(i).add(j);
+                    }
                 }
             }
 
             for (int k = 0; k < n; k++) {
                 for (int l = k + 1; l < n;l++) {
                     // for one edge
-                    if (graph[k][l] == 1) {
+                    if (adjList.get(k).contains(l)) {
                         for (int m = l + 1; m < n; m++) {
                             // for the second edge
-                            if (graph[k][m] == 1) {
+                            if (adjList.get(k).contains(m)) {
                                 // if the third edge is also connected, a triangle is formed
-                                if (graph[l][m] == 1) {
+                                if (adjList.get(m).contains(l)) {
                                     // indicate the vertex is not week in reference
                                     reference[k] = 1;
                                     reference[l] = 1;
