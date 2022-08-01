@@ -1,6 +1,3 @@
-// A0239855M
-// Zhang Jingyi
-
 import java.util.*;
 
 public class SortOfSorting {

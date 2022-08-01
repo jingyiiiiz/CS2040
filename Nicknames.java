@@ -1,8 +1,3 @@
-// Zhang Jingyi
-// A0239855M
-
-// When doing this assginment, I have verbally disccused the method to use with Qiu Ruitong and Lyu Lanqing, without directly looking at or referring to their codes.
-
 import java.util.*;
 import java.io.*;
 

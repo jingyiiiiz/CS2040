@@ -1,6 +1,3 @@
-// Zhang Jingyi
-// A0239855M
-
 import java.io.*;
 import java.util.*;
 

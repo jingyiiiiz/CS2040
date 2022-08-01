@@ -1,6 +1,3 @@
-// Zhang Jingyi
-// A0239855M
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
